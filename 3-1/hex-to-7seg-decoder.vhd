@@ -4,8 +4,8 @@ use IEEE.std_logic_1164.all;
 
 ENTITY hex_to_seg_decoder IS
 PORT (
-	entry: IN STD_LOGIC_VECTOR(0 to 3);
-	segs: OUT STD_LOGIC_VECTOR(0 to 6)
+	entry: IN STD_LOGIC_VECTOR(0 downto 3);
+	segs: OUT STD_LOGIC_VECTOR(0 downto 6)
 	);
 END hex_to_seg_decoder;
 
