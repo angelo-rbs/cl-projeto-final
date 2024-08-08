@@ -15,38 +15,39 @@ BEGIN
 	BEGIN
 		CASE entry IS
 		when "0000" =>
-			segs <= "1111110";
+			segs <= "1111110"; -- 0
 		when "0001" =>
-			segs <= "0110000";
+			segs <= "0110000"; -- 1
 		when "0010" =>
-			segs <= "1101101";
+			segs <= "1101101"; -- 2
 		when "0011" =>
-			segs <= "1111001";
+			segs <= "1111001"; -- 3
 		when "0100" =>
-			segs <= "0110011";
+			segs <= "0110011"; -- 4
 		when "0101" =>
-			segs <= "1011011";
+			segs <= "1011011"; -- 5
 		when "0110" =>
-			segs <= "1011111";
+			segs <= "1011111"; -- 6
 		when "0111" =>
-			segs <= "1110000";
+			segs <= "1110000"; -- 7
 		when "1000" =>
-			segs <= "1111111";
+			segs <= "1111111"; -- 8
 		when "1001" =>
-			segs <= "1111011";
+			segs <= "1111011"; -- 9
 		when "1010" =>
-			segs <= "";
+			segs <= "1110111"; -- A
 		when "1011" =>
-			segs <= "";
+			segs <= "0011111"; -- B
 		when "1100" =>
-			segs <= "";
+			segs <= "1001110"; -- C
 		when "1101" =>
-			segs <= "";
+			segs <= "0111101"; -- D
 		when "1110" =>
-			segs <= "";
-		when "1101" =>
-			segs <= "";
-
+			segs <= "1001111"; -- E
+		when "1111" =>
+			segs <= "1000111"; -- F
+		when others => 
+			segs <= "00000000"; -- Casos não previstos
 	END CASE;
 END PROCESS;
 END impl;
