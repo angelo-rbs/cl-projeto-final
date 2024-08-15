@@ -1,0 +1,79 @@
+# Copyright (C) 2023  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+
+# Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+# File: /home/joseemds/teste_nand_chaves.csv
+# Generated on: Thu Aug 15 15:42:33 2024
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+carry,Output,,,,,,,,,
+clk,Input,PIN_Y2,2,B2_N0,,,,,,
+display[0],Output,PIN_V21,5,B5_N1,,,,,,
+display[1],Output,PIN_U21,5,B5_N0,,,,,,
+display[2],Output,PIN_AB20,4,B4_N0,,,,,,
+display[3],Output,PIN_AA21,4,B4_N0,,,,,,
+display[4],Output,PIN_AD24,4,B4_N0,,,,,,
+display[5],Output,PIN_AF23,4,B4_N0,,,,,,
+display[6],Output,PIN_Y19,4,B4_N0,,,,,,
+display[7],Output,PIN_AA25,5,B5_N1,,,,,,
+display[8],Output,PIN_AA26,5,B5_N1,,,,,,
+display[9],Output,PIN_Y25,5,B5_N1,,,,,,
+display[10],Output,PIN_W26,5,B5_N1,,,,,,
+display[11],Output,PIN_Y26,5,B5_N1,,,,,,
+display[12],Output,PIN_W27,5,B5_N1,,,,,,
+display[13],Output,PIN_W28,5,B5_N1,,,,,,
+display[14],Output,PIN_M24,6,B6_N2,,,,,,
+display[15],Output,PIN_Y22,5,B5_N0,,,,,,
+display[16],Output,PIN_W21,5,B5_N1,,,,,,
+display[17],Output,PIN_W22,5,B5_N0,,,,,,
+display[18],Output,PIN_W25,5,B5_N1,,,,,,
+display[19],Output,PIN_U23,5,B5_N1,,,,,,
+display[20],Output,PIN_U24,5,B5_N0,,,,,,
+display[21],Output,PIN_G18,7,B7_N2,,,,,,
+display[22],Output,PIN_F22,7,B7_N0,,,,,,
+display[23],Output,PIN_E17,7,B7_N2,,,,,,
+display[24],Output,PIN_L26,6,B6_N1,,,,,,
+display[25],Output,PIN_L25,6,B6_N1,,,,,,
+display[26],Output,PIN_J22,6,B6_N0,,,,,,
+display[27],Output,PIN_H22,6,B6_N0,,,,,,
+display_estado[0],Output,PIN_AD17,4,B4_N2,,,,,,
+display_estado[1],Output,PIN_AE17,4,B4_N2,,,,,,
+display_estado[2],Output,PIN_AG17,4,B4_N2,,,,,,
+display_estado[3],Output,PIN_AH17,4,B4_N2,,,,,,
+display_estado[4],Output,PIN_AF17,4,B4_N2,,,,,,
+display_estado[5],Output,PIN_AG18,4,B4_N2,,,,,,
+display_estado[6],Output,PIN_AA14,3,B3_N0,,,,,,
+entrada[15],Input,PIN_AC27,5,B5_N2,,,,,,
+entrada[14],Input,PIN_AD27,5,B5_N2,,,,,,
+entrada[13],Input,PIN_AB27,5,B5_N1,,,,,,
+entrada[12],Input,PIN_AC26,5,B5_N2,,,,,,
+entrada[11],Input,PIN_AD26,5,B5_N2,,,,,,
+entrada[10],Input,PIN_AB26,5,B5_N1,,,,,,
+entrada[9],Input,PIN_AC25,5,B5_N2,,,,,,
+entrada[8],Input,PIN_AB25,5,B5_N1,,,,,,
+entrada[7],Input,PIN_AC24,5,B5_N2,,,,,,
+entrada[6],Input,PIN_AB24,5,B5_N2,,,,,,
+entrada[5],Input,PIN_AB23,5,B5_N2,,,,,,
+entrada[4],Input,PIN_AA24,5,B5_N2,,,,,,
+entrada[3],Input,PIN_AA23,5,B5_N2,,,,,,
+entrada[2],Input,PIN_AA22,5,B5_N2,,,,,,
+entrada[1],Input,PIN_Y24,5,B5_N2,,,,,,
+entrada[0],Input,PIN_Y23,5,B5_N2,,,,,,
+ler_a,Input,PIN_R24,5,B5_N0,,,,,,
+ler_b,Input,PIN_N21,6,B6_N2,,,,,,
+ler_seletor,Input,PIN_M21,6,B6_N1,,,,,,
+reset,Input,,,,,,,,,
