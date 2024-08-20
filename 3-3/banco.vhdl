@@ -12,10 +12,10 @@ entity banco_registradores is
         entrada     : in std_logic_vector(TAM_REG-1 downto 0);
         saida       : out std_logic_vector(TAM_REG-1 downto 0);
 		  
-		  ler_reg    : in  std_logic;
-		  insert_val : in  std_logic;
-		  set_val    : in  std_logic;
-		  fetch_val  : in  std_logic
+		ler_reg    : in  std_logic;
+		insert_val : in  std_logic;
+		set_val    : in  std_logic;
+		fetch_val  : in  std_logic
     );
 end banco_registradores;
 
