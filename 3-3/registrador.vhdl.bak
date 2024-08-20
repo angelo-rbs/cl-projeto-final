@@ -1,0 +1,26 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY registrador IS
+	GENERIC (
+		TAM : integer := 16
+	);
+	PORT (entrada : IN STD_LOGIC_VECTOR(TAM-1 DOWNTO 0);
+	      clock, reset: IN STD_LOGIC;
+	      saida : OUT STD_LOGIC_VECTOR(TAM-1 DOWNTO 0));
+END registrador;
+
+ARCHITECTURE behavior OF registrador IS
+	signal conteudo_reg : STD_LOGIC_VECTOR(TAM-1 DOWNTO 0) := (others => '0');
+BEGIN
+	PROCESS (reset, clock)
+	BEGIN
+		IF reset = '1' THEN
+			conteudo_reg <= (others => '0');
+		ELSIF rising_edge(clock) THEN
+			conteudo_reg <= entrada;
+		END IF;
+	END PROCESS;
+
+	saida <= conteudo_reg;
+END behavior;

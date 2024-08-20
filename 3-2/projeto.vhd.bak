@@ -92,7 +92,7 @@ begin
 					B <= entrada;
 			  elsif ler_seletor = '0' then
 					estado <= "0000";
-					sel <= entrada(0 to 2);
+					sel <= entrada(2 downto 0);
 			  elsif mostrar_resultado = '0' then
 					estado <= "1100";
 			  end if;
