@@ -14,10 +14,9 @@ entity banco is
         entrada     : in std_logic_vector(TAM_REG-1 downto 0);
         saida       : out std_logic_vector(TAM_REG-1 downto 0);
 		  
-	     op : in std_logic; -- escrita/leitura = 0/1 
-		  objeto : in std_logic; -- registrador/valor = 0/1
-
-		  reg_atual : out std_logic_vector(3 downto 0)
+		  set_reg : in std_logic;
+		  set_val : in std_logic;
+		  get_val : in std_logic
     );
 end banco;
 
@@ -29,7 +28,6 @@ architecture behaviour of banco is
     signal entrada_var : STD_LOGIC_VECTOR(TAM_REG-1 downto 0); -- valor atual na entrada
     signal reg_selecionado : STD_LOGIC_VECTOR(3 downto 0); -- qual dos 16 registradores está selecionado 
 
-
 begin
 
     process(clk, reset) begin
@@ -38,12 +36,12 @@ begin
         elsif rising_edge(clk) then
                 entrada_var <= entrada;
 		  
-                if op = '0' and objeto = '0' then -- escrita/registrador
+                if set_reg = '0' then -- escrita/registrador
                     reg_selecionado <= entrada(3 downto 0); 
-		              reg_atual <= reg_selecionado;
-                elsif op = '0' and objeto = '1' then -- escrita/valor
+		              saida <= reg_selecionado & "000000000000";
+                elsif set_val = '0' then -- escrita/valor
                     registradores(to_integer(unsigned(reg_selecionado))) <= entrada_var;
-                elsif op = '1' and objeto = '1' then -- leitura/valor
+                elsif get_val = '0' then -- leitura/valor
                     saida <= registradores(to_integer(unsigned(reg_selecionado)));
                 end if;
         end if;
